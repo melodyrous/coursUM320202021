@@ -1,7 +1,7 @@
 # Projet 
 
 ## URL du projet 
-https://https://melodyrous.github.io/coursUM320202021/
+https://melodyrous.github.io/coursUM320202021/
 
 ### Liens vers les données
 #### Elections présidentielles USA
