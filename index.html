@@ -1,8 +1,5 @@
-<!doctype html>
-<html lang="fr">
+<html>
     <head>
-        <meta charset="utf-8">
-
     </head>
 
     <body>
@@ -12,5 +9,85 @@
     </body>
 </html>
 
-<script  src="scriptprojet.js">
+<script>
+    fetch('https://csvapi.data.gouv.fr/api/86a4e497fbcaff72ca2e022db0a513a1', { method: 'GET',
+               headers: {},
+               mode: 'cors',
+               cache: 'default'}).then(
+    function(response){
+        response.json().then(function(data){result = data})
+            }
+)
+
+fetch("https://www.data.gouv.fr/storage/f/2014-03-25T16-08-50/muni-2014-resultats-com-moins-1000-t1.txt", { method: 'GET',
+               headers: {},
+               mode: 'cors',
+               cache: 'default'}).then(
+    function(response){
+        response.json().then(function(data){result = data})
+            }
+)
+
+
+fetch("https://data.montpellier3m.fr/sites/default/files/ressources/FR_MTP_ANTI.xml",
+{ method: 'GET',
+               headers: {},
+               mode: 'cors',
+               cache: 'default'}).then(
+    function(response){
+        response.json().then(function(data){result = data})
+            }
+)
+
+fetch("https://data.montpellier3m.fr/sites/default/files/ressources/FR_MTP_EURO.xml", {
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+    "accept-language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
+    "cache-control": "max-age=0",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "none",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1"
+  },
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "include"
+}).then(
+    function(response){
+        response.json().then(function(data){result = data})
+            }
+)
+;
+https://www.data.gouv.fr/storage/f/2014-03-25T16-08-50/muni-2014-resultats-com-moins-1000-t1.txt
+
+https://data.montpellier3m.fr/api/3/action/package_show?id=90e17b94-989f-4d66-83f4-766d4587bec2&utm_source=Site%20internet&utm_campaign=Clic%20sur%20%3A%20https%3A//data.montpellier3m.fr/api/3/action/package_show/90e17b94-989f-4d66-83f4-766d4587bec2&utm_term=https%3A//data.montpellier3m.fr/api/3/action/package_show/90e17b94-989f-4d66-83f4-766d4587bec2
+
+https://data.montpellier3m.fr/sites/default/files/ressources/FR_MTP_EURO.xml
+
+https://data.montpellier3m.fr/sites/default/files/ressources/ParkingTpsReel_modele.xml
+
+https://data.montpellier3m.fr/sites/default/files/ressources/FR_MTP_ANTI.xml
+fetch("https://fenixservices.fao.org/faostat/api/v1/fr/rankings/", {
+    "headers": {
+      "accept": "*/*",
+      "accept-language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
+      "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+      "proxy-connection": "keep-alive"
+  },
+
+    "body": "List3Codes=_1&List5Codes=&List6Codes=&List7Codes=&decimal_places=4&null_values=false&filter_list=1&rank_type=DESC&domain_codes=TP&List2Codes=5610&limit=20&List1Codes=5000&List4Codes=2018&output_type=objects",
+    "method": "POST",
+    "mode": "cors",
+    "credentials": "omit"
+  }).then(
+    function(response){
+        response.json().then(function(data){result = data})
+            }
+)
+
+List3Codes=_1&List5Codes=&List6Codes=&List7Codes=&decimal_places=4&null_values=false&filter_list=1&rank_type=DESC&domain_codes=TP&List2Codes=5610&limit=20&List1Codes=5000&List4Codes=2018&output_type=objects
 </script>
+
