@@ -1,0 +1,58 @@
+body{
+  font-family: 'Tajawal', sans-serif;
+  font-size: 120%;
+  background-color: #79C3FF;
+}
+
+svg{
+  float: left;
+  width: auto;
+  height: 70%;
+}
+
+.usa_map{
+  padding: 2%;
+  border-radius: 2%;
+  height: 90%;
+}
+
+.usa_map path{
+  float:left;
+  fill: #F6CEF5;
+  stroke: #FD79FF;
+  transition: fill 0.3s;
+}
+
+.usa_map path:hover{
+  fill:#B404AE;
+}
+
+#information{
+  background: white;
+  width: 50%;
+  height: 100%;
+  float: right;
+  border-radius: 20px;
+}
+
+#nom_etat{
+  padding: 10px;
+  margin-left: 5%;
+}
+
+#graphique{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+#repartition_votes{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+h1{
+  float: left;
+}
